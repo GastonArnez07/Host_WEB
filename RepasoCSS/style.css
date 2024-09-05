@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+     background: linear-gradient(
+        rgba(0, 0, 0, 05), /* Rojo con 50% de opacidad */
+        rgba(0, 0, 0, 0.5), /* Verde con 50% de opacidad */
+        rgba(0, 0, 0, 0.7)  /* Azul con 50% de opacidad */
+    ), url('/assets/media/Captura\ de\ pantalla\ \(27\).png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+header{ 
+    background-color: dif;
+    display: flex;
+    justify-content: space-between;
+    padding:10px ;
+    border-radius:  20px 20px 0px 0px;
+}
+
+.container__logo{
+    width: 220px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo__img, h1{
+    font-family: Georgia;
+    font-style: italic;
+    color: aliceblue;
+    margin-left: 15px ;
+}
+
+.container__nav{
+    width: 700px;
+    padding: 10px;
+
+}
+
+.nav__navbar{
+    margin-right: 40px;
+}
+
+
+.nav__navbar-ul{ 
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__navbar-item{
+    list-style: none;
+    
+}
+
+.nav__navbar-link{
+    font-size: 18px;
+    font-family:Georgia;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+main{
+
+}
+
+.container__h2 { 
+    height: 90%;
+    color: aliceblue;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}  
+
+.box--imgRotation{
+    width: 500px;
+    margin-left: 34%;
+    animation: rotarX 5s linear infinite;
+}
+
+.content__h2-first{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.content__h2-second{
+    font-family:Georgia;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+footer{
+    vertical-align: bottom;
+    color: aliceblue;
+    padding: 20px;
+    background-color: rgb(10, 80, 113);
+}
+
+h3{
+   color: rgb(28, 215, 84);
+
+}
+
+footer a{
+    text-decoration: none;
+    color: rgb(172, 225, 255);
+}
+.container__footer-contacts{
+    vertical-align: top;
+    display: inline-block;
+    width: 300px;
+}
+
+
+.container__footer-OurServices{
+    margin-left: 40px;
+    vertical-align: top;
+    display:inline-block ;
+    width: 300px;
+}
+
+.container__footer-links{ 
+    width: 300px;
+    height: 100px;   
+    float: inline-end;
+}
+
+.container__footer-copyright{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.container__footer-terms{
+    text-align: center;
+}
+
+.box--principalHorizontal{
+    font-family: Georgia;
+    color: aliceblue;
+    height: 250px;
+    background-color: rgb(35, 189, 145);
+}
+
+.box--divs{
+    margin: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: desplazamiento 30s linear infinite;
+}
+
+.box--horizontal{
+    margin: 10px;
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 24px;
+
+}
+
+.box--divs2{
+    margin: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: desplazamientoRight 20s linear infinite;
+}
+
+.box--horizontal_2{
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 24px;
+
+}
+
+.box--divs3{
+    margin: 10px;
+    display: inline-block;
+    white-space: nowrap;
+    animation: desplazamientoLeft 15s linear infinite;
+}
+
+.box--horizontal_3{
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 24px;
+
+}
+
+/*para rotar la img de fondo*/
+@keyframes rotarX{
+  
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes desplazamiento {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+@keyframes desplazamientoRight {
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+    
+}
+
+@keyframes desplazamientoLeft {
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}

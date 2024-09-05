@@ -1,0 +1,119 @@
+body{
+    background-color: #0a5071;
+} 
+
+.container__form-login{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+form{
+    
+    width: 34%;
+    background-color: #18b95c;
+    border-radius: 20px
+}
+
+.login{               /*etiqueta general de divs, aplicando la METODOLOGÍA "BEM" */
+    margin-top: 10px;
+    height: 50px;
+    justify-content: center;
+}
+
+label,input{
+    
+    font-size: 15px;
+    display: flex;
+    width: 60%;
+    margin-left:20%;
+    border-radius: 5px;
+    height: 30px;
+}
+
+label{
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.login--h2{
+    height: auto;
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-family: Georgia;
+}
+
+.login--img{
+    margin-top: 0%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.login--img img{
+    display: block;
+    animation: rotarX 10s linear infinite;
+}
+
+.login--password{
+    margin-top: 30px;
+}
+
+.login--check{
+    margin-top: 20px;
+}
+
+.login--check input{
+    width: 10px;
+    display: inline;    
+    background-color: rgb(243, 3, 3);
+}
+
+.login--check label{
+    color: rgb(255, 255, 255);
+    display: inline;
+    font-size: 15px;
+    margin-left: 0%;
+    
+}
+
+.login--check a{
+    margin-left: 45px;
+}
+
+
+.login--btn__register{
+    margin-top: 0px; 
+    padding: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.login--btn__register button{
+    
+    border: solid transparent;
+    width: 100px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: rgb(204, 204, 204);
+}
+.login--btn__register button:hover{
+    background-color: red;
+}
+
+.login--links__rrss{
+    display: flex;
+}
+
+
+
+/*para rotar la img del login*/
+@keyframes rotarX{
+  
+    from{
+        transform: rotateY(0);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
